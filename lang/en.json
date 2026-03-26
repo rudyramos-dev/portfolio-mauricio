@@ -7,7 +7,7 @@
   "nav_contact":      "contact",
   "nav_cv":           "↓ resume.pdf",
 
-  "hero_badge":       "BACKEND DEVELOPER & SOFTWARE ENGINEER",
+  "hero_badge":       "FULLSTACK DEVELOPER & SOFTWARE ENGINEER",
   "hero_title_1":     "Building",
   "hero_title_2":     "efficient",
   "hero_title_3":     " and scalable systems",
@@ -23,6 +23,7 @@
   "skills_subtitle":  "Technologies I use to build real solutions.",
   "skills_backend":   "Backend",
   "skills_frontend":  "Frontend",
+  "skills_frameworks":"Frameworks",
   "skills_database":  "Databases",
   "skills_tools":     "Tools",
 
