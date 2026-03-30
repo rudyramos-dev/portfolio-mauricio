@@ -1,0 +1,65 @@
+<!-- ════════════════════════════════════════════════════════════════
+     HEADER
+════════════════════════════════════════════════════════════════ -->
+<header id="header" class="fixed top-0 left-0 right-0 z-50 bg-terminal-bg/90 backdrop-blur-md border-b border-terminal-border transition-all duration-300">
+  <nav class="max-w-6xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between">
+
+    <!-- Logo -->
+    <a href="#inicio" class="font-mono text-sm font-bold text-terminal-green hover:text-white transition-colors">
+      <span class="text-terminal-muted">~/</span>rudy.dev
+    </a>
+
+    <!-- Nav links desktop -->
+    <ul class="hidden md:flex items-center gap-6 font-mono text-xs text-terminal-muted" role="list">
+      <li><a href="#inicio"       class="hover:text-terminal-green transition-colors" data-i18n="nav_home">inicio</a></li>
+      <li><a href="#proyectos"    class="hover:text-terminal-green transition-colors" data-i18n="nav_projects">proyectos</a></li>
+      <li><a href="#skills"       class="hover:text-terminal-green transition-colors" data-i18n="nav_skills">skills</a></li>
+      <li><a href="#research"     class="hover:text-terminal-green transition-colors" data-i18n="nav_research">research</a></li>
+      <li><a href="#certificates" class="hover:text-terminal-green transition-colors" data-i18n="nav_certificates">logros</a></li>
+      <li><a href="#contacto"     class="hover:text-terminal-green transition-colors" data-i18n="nav_contact">contacto</a></li>
+    </ul>
+
+    <!-- Controles derecha -->
+    <div class="flex items-center gap-3">
+      <!-- Toggle idioma -->
+      <button id="lang-toggle"
+        class="font-mono text-xs text-terminal-muted hover:text-terminal-green border border-terminal-border rounded px-2 py-1 transition-colors"
+        aria-label="Cambiar idioma">EN</button>
+
+      <!-- Botón CV -->
+      <a id="cv-btn"
+         href="./assets/docs/Rudy_Ramos_CV.pdf"
+         download="Rudy_Ramos_CV.pdf"
+         class="hidden sm:inline-flex items-center gap-2 font-mono text-xs font-bold text-terminal-bg bg-terminal-green hover:bg-terminal-green-dim px-3 py-1.5 rounded transition-colors"
+         data-i18n="nav_cv">
+        ↓ cv.pdf
+      </a>
+
+      <!-- Hamburguesa mobile -->
+      <button id="menu-toggle"
+        class="md:hidden p-1.5 text-terminal-muted hover:text-terminal-green transition-colors"
+        aria-label="Abrir menú" aria-expanded="false">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Menu mobile -->
+  <div id="mobile-menu" class="hidden md:hidden border-t border-terminal-border bg-terminal-surface">
+    <ul class="max-w-6xl mx-auto px-4 py-4 flex flex-col gap-3 font-mono text-sm text-terminal-muted">
+      <li><a href="#inicio"       class="block hover:text-terminal-green transition-colors" data-i18n="nav_home">inicio</a></li>
+      <li><a href="#proyectos"    class="block hover:text-terminal-green transition-colors" data-i18n="nav_projects">proyectos</a></li>
+      <li><a href="#skills"       class="block hover:text-terminal-green transition-colors" data-i18n="nav_skills">skills</a></li>
+      <li><a href="#research"     class="block hover:text-terminal-green transition-colors" data-i18n="nav_research">research</a></li>
+      <li><a href="#certificates" class="block hover:text-terminal-green transition-colors" data-i18n="nav_certificates">logros</a></li>
+      <li><a href="#contacto"     class="block hover:text-terminal-green transition-colors" data-i18n="nav_contact">contacto</a></li>
+       <li>
+         <a href="./assets/docs/Rudy_Ramos_CV.pdf" download="Rudy_Ramos_CV.pdf"
+            class="inline-flex items-center gap-2 text-terminal-bg bg-terminal-green px-3 py-1.5 rounded font-bold text-xs"
+            data-i18n="nav_cv">↓ cv.pdf</a>
+       </li>
+    </ul>
+  </div>
+</header>

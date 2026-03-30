@@ -1,0 +1,128 @@
+  <section id="inicio" class="min-h-screen flex items-center pt-14 relative overflow-hidden bg-animated-gradient">
+    <!-- Partículas flotantes de fondo -->
+    <div class="particles-container">
+      <div class="particle particle-1"></div>
+      <div class="particle particle-2"></div>
+      <div class="particle particle-3"></div>
+      <div class="particle particle-4"></div>
+      <div class="particle particle-5"></div>
+    </div>
+
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-20 w-full relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+        <!-- Columna izquierda: texto ──────────────────────────── -->
+        <div class="flex flex-col gap-6">
+
+          <!-- Badge rol -->
+          <div class="flex items-center gap-2 font-mono text-xs text-terminal-green reveal animate-slide-in-left">
+            <span class="text-terminal-muted">//</span>
+            <span data-i18n="hero_badge" class="animate-gradient-text">FULLSTACK DEVELOPER & SOFTWARE ENGINEER</span>
+          </div>
+
+          <!-- Título principal -->
+          <h1 class="font-sans font-bold leading-tight reveal animate-fade-in-up" style="font-size: clamp(2rem, 5vw, 3.5rem)">
+            <span data-i18n="hero_title_1" class="text-terminal-text">Construyendo sistemas</span><br/>
+            <span data-i18n="hero_title_2" class="text-terminal-green animate-glow-pulse">eficientes</span>
+            <span data-i18n="hero_title_3" class="text-terminal-text"> y escalables</span>
+          </h1>
+
+          <!-- Subtítulo -->
+          <p class="text-terminal-muted leading-relaxed max-w-lg reveal animate-fade-in-up delay-200" style="font-size: 1rem"
+             data-i18n="hero_subtitle">
+            Diseño y desarrollo soluciones robustas enfocadas en rendimiento,
+            mantenibilidad e impacto real.
+          </p>
+
+          <!-- CTAs -->
+          <div class="flex flex-wrap gap-3 reveal animate-fade-in-up delay-300">
+            <a href="#proyectos"
+               class="inline-flex items-center gap-2 font-mono text-sm font-bold text-terminal-bg bg-terminal-green hover:bg-terminal-green-dim px-5 py-2.5 rounded transition-all duration-200 hover:scale-105 hover:shadow-lg hover-shine ripple-effect"
+               data-i18n="hero_cta_primary">
+              Ver proyectos
+            </a>
+            <a href="#contacto"
+               class="inline-flex items-center gap-2 font-mono text-sm font-bold text-terminal-green border border-terminal-green hover:bg-terminal-green/10 px-5 py-2.5 rounded transition-all duration-200 hover:scale-105 hover-glow"
+               data-i18n="hero_cta_secondary">
+              Contacto
+            </a>
+          </div>
+
+          <!-- Stats rápidos -->
+          <div class="flex flex-wrap gap-6 pt-4 border-t border-terminal-border reveal animate-fade-in-up delay-400">
+            <div class="flex flex-col gap-1 hover-lift">
+              <span class="font-mono text-xl font-bold text-terminal-green animate-bounce-in delay-500">4+</span>
+              <span class="font-mono text-xs text-terminal-muted" data-i18n="hero_stat_1">años estudiando</span>
+            </div>
+            <div class="w-px bg-terminal-border self-stretch hidden sm:block"></div>
+            <div class="flex flex-col gap-1 hover-lift">
+              <span class="font-mono text-xl font-bold text-terminal-green animate-bounce-in delay-600">1</span>
+              <span class="font-mono text-xs text-terminal-muted" data-i18n="hero_stat_2">paper publicado</span>
+            </div>
+            <div class="w-px bg-terminal-border self-stretch hidden sm:block"></div>
+            <div class="flex flex-col gap-1 hover-lift">
+              <span class="font-mono text-xl font-bold text-terminal-green animate-bounce-in delay-700">17+</span>
+              <span class="font-mono text-xs text-terminal-muted" data-i18n="hero_stat_3">certificaciones</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Columna derecha: terminal ─────────────────────────── -->
+        <div class="flex justify-center lg:justify-end reveal animate-slide-in-right">
+          <div class="w-full max-w-md">
+
+            <!-- Ventana terminal -->
+            <div class="bg-terminal-surface border border-terminal-border rounded-lg overflow-hidden shadow-2xl hover-lift animate-glow">
+
+              <!-- Barra de título -->
+              <div class="flex items-center gap-2 px-4 py-3 bg-terminal-surface2 border-b border-terminal-border">
+                <span class="w-3 h-3 rounded-full bg-red-500 hover:animate-bounce"></span>
+                <span class="w-3 h-3 rounded-full bg-yellow-400 hover:animate-bounce"></span>
+                <span class="w-3 h-3 rounded-full bg-green-400 hover:animate-bounce animate-pulse"></span>
+                <span class="ml-3 font-mono text-xs text-terminal-muted">rudy@portfolio ~ </span>
+              </div>
+
+              <!-- Contenido terminal -->
+              <div class="p-5 font-mono text-sm space-y-2" id="terminal-content">
+                <p class="text-terminal-muted animate-fade-in">$ whoami</p>
+                <p class="text-terminal-text animate-fade-in delay-100">rudy_ramos</p>
+                <p class="text-terminal-muted mt-3 animate-fade-in delay-200">$ cat status.json</p>
+                <div class="mt-1 space-y-1.5">
+                  <p class="animate-fade-in-up delay-300"><span class="text-terminal-purple">status</span><span class="text-terminal-muted">:</span> <span class="text-terminal-green">"online"</span></p>
+                  <p class="animate-fade-in-up delay-400"><span class="text-terminal-purple">role</span><span class="text-terminal-muted">:</span> <span class="text-terminal-green">"fullstack dev"</span></p>
+                  <p class="animate-fade-in-up delay-500"><span class="text-terminal-purple">stack</span><span class="text-terminal-muted">:</span> <span class="text-terminal-cyan">["Laravel", "React", "Next.js"]</span></p>
+                  <p class="animate-fade-in-up delay-600"><span class="text-terminal-purple">db</span><span class="text-terminal-muted">:</span> <span class="text-terminal-cyan">["MySQL", "MongoDB"]</span></p>
+                  <p class="animate-fade-in-up delay-700"><span class="text-terminal-purple">focus</span><span class="text-terminal-muted">:</span> <span class="text-terminal-green">"performance"</span></p>
+                  <p class="animate-fade-in-up delay-800"><span class="text-terminal-purple">location</span><span class="text-terminal-muted">:</span> <span class="text-terminal-green">"Campeche, MX"</span></p>
+                  <p class="animate-fade-in-up delay-800"><span class="text-terminal-purple">available</span><span class="text-terminal-muted">:</span> <span class="text-terminal-green">true</span></p>
+                  <p class="animate-fade-in-up delay-800"><span class="text-terminal-purple">system</span><span class="text-terminal-muted">:</span> <span class="text-terminal-yellow">"ready_"</span><span class="terminal-cursor">▋</span></p>
+            </div>
+            </div>
+        </div>
+
+            <!-- Foto debajo de la terminal -->
+            <div class="mt-4 flex items-center gap-3 bg-terminal-surface border border-terminal-border rounded-lg px-4 py-3 hover-lift animate-fade-in-up delay-800">
+              <img
+                src="./assets/images/rudy.png"
+                alt="Rudy Mauricio Ramos — Fullstack Developer"
+                width="48" height="48"
+                loading="eager"
+                class="w-12 h-12 rounded-full object-cover border-2 border-terminal-green hover:animate-rotate-y"
+              />
+              <div class="font-mono">
+                <p class="text-sm font-bold text-terminal-text">Rudy Mauricio Ramos</p>
+                <p class="text-xs text-terminal-muted">Fullstack Dev · UAC · Campeche</p>
+              </div>
+              <div class="ml-auto flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-terminal-green animate-pulse"></span>
+                <span class="font-mono text-xs text-terminal-green">online</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>

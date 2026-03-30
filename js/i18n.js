@@ -103,16 +103,39 @@ function t(key) {
   return translations[key] || key;
 }
 
+/**
+ * Conecta el botón de toggle de idioma
+ * Llamado tanto en DOMContentLoaded como en componentsLoaded
+ */
+function setupLangToggle() {
+  const toggleBtn = document.getElementById('lang-toggle');
+  if (toggleBtn && !toggleBtn.dataset.listenerAttached) {
+    toggleBtn.addEventListener('click', () => {
+      const nextLang = currentLang === 'es' ? 'en' : 'es';
+      setLang(nextLang);
+    });
+    toggleBtn.dataset.listenerAttached = 'true';
+  }
+}
+
 // ── Inicialización ─────────────────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', async () => {
   const initialLang = detectInitialLang();
   await setLang(initialLang);
+  setupLangToggle();
+});
 
-  // Conectar el botón de toggle
-  document.getElementById('lang-toggle')?.addEventListener('click', () => {
-    const nextLang = currentLang === 'es' ? 'en' : 'es';
-    setLang(nextLang);
-  });
+// También inicializar cuando los componentes se carguen dinámicamente
+document.addEventListener('componentsLoaded', async () => {
+  // Si aún no se ha cargado el idioma, cargarlo ahora
+  if (Object.keys(translations).length === 0) {
+    const initialLang = detectInitialLang();
+    await setLang(initialLang);
+  } else {
+    // Si ya está cargado, solo re-aplicar las traducciones a los nuevos elementos
+    applyTranslations(translations);
+  }
+  setupLangToggle();
 });
 
 // Exportar para uso en otros módulos
